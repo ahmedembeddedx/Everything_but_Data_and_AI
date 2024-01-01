@@ -2,6 +2,8 @@
 
 Welcome to the wild and eclectic world of **Everything but Data Science** - where code meets creativity, and possibilities know no bounds!
 
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/ahmedembeddedx/Everything_but_Data_Science/blob/main/LICENSE)
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
