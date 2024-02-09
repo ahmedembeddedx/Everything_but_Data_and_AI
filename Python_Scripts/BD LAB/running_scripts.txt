@@ -1,0 +1,4 @@
+python wordcounter.py data.txt
+python firstlettercounter.py data.txt
+python length5counter.py data.txt
+
