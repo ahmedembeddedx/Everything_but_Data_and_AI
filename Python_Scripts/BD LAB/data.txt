@@ -1,3 +1,0 @@
-MRJob is the famous python library for MapReduce developed by YELP
-The library helps developers to write MapReduce code using a Python Programming language
-Developers can test the MapReduce Python code written with mrjob locally on their system or on the cloud using Amazon Elastic MapReduce
