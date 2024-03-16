@@ -4,7 +4,7 @@ from pyspark.sql.types import IntegerType
 
 
 spark = SparkSession.builder \
-    .appName("GPA Calculator") \
+    .appName("Avg. GPA") \
     .getOrCreate()
 
 studata = spark.read.csv("data.csv", sep=" ", header=True, inferSchema=True)
@@ -18,9 +18,7 @@ getGPA_func = udf(getGPA, IntegerType())
 
 studata = studata.withColumn("GPA", getGPA_func(col("Grade")))
 
-studata = studata.select(studata.Roll, studata.GPA)
-
-studata = studata.groupBy(col("Roll")).agg(avg(col("GPA")))
+studata = studata.groupBy(col("Course")).agg(avg(col("GPA")).alias("Avg. GPA"))
 
 studata.show()
 
