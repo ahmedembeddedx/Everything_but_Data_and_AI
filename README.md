@@ -1,6 +1,6 @@
-# Everything but Data Science
+# Everything but Data and AI
 
-Welcome to the wild and eclectic world of **Everything but Data Science** - where code meets creativity, and possibilities know no bounds!
+Welcome to the wild and eclectic world of **Everything but Data and AI** - where code meets creativity, and possibilities know no bounds!
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/ahmedembeddedx/Everything_but_Data_Science/blob/main/LICENSE)
 
