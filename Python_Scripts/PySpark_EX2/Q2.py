@@ -6,7 +6,7 @@ spark = SparkSession.builder \
     .appName("Counting Lahore Students") \
     .getOrCreate()
 
-studata = spark.read.csv("data.csv", sep=" ", header=True, inferSchema=True)
+studata = spark.read.csv("citys.csv", sep=" ", header=True, inferSchema=True)
 
 studata = studata.filter(col("Roll").startswith('L'))
 

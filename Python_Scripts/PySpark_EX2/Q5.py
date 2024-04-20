@@ -4,7 +4,7 @@ spark = SparkSession.builder \
     .appName("Distinct Records") \
     .getOrCreate()
 
-studata = spark.read.csv("data.csv", sep=" ", header=True, inferSchema=True)
+studata = spark.read.csv("citys.csv", sep=" ", header=True, inferSchema=True)
 
 studata = studata.distinct()
 

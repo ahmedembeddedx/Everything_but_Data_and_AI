@@ -5,7 +5,7 @@ spark = SparkSession.builder \
     .appName("Calculating Average Marks") \
     .getOrCreate()
 
-marks_df = spark.read.csv("data.csv", header=True, inferSchema=True)
+marks_df = spark.read.csv("students.csv", header=True, inferSchema=True)
 
 average_marks_df = marks_df.groupBy("Student").agg(avg("Marks"))
 

@@ -6,7 +6,7 @@ spark = SparkSession.builder \
     .appName("Ordered Grades") \
     .getOrCreate()
 
-studata = spark.read.csv("data.csv", sep=" ", header=True, inferSchema=True)
+studata = spark.read.csv("citys.csv", sep=" ", header=True, inferSchema=True)
 
 studata = studata.groupBy("Course").agg(min(col("Grade")).alias("MaxGrade"), max(col("Grade")).alias("MinGrade"))
 

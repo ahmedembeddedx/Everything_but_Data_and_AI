@@ -7,7 +7,7 @@ spark = SparkSession.builder \
     .appName("Avg. GPA") \
     .getOrCreate()
 
-studata = spark.read.csv("data.csv", sep=" ", header=True, inferSchema=True)
+studata = spark.read.csv("citys.csv", sep=" ", header=True, inferSchema=True)
 
 def getGPA(Grade):
     grades_dict = {'A':4, 'B':3, 'C':2, 'D':1, 'F':0}

@@ -6,7 +6,7 @@ spark = SparkSession.builder \
     .appName("Students in year 1995-2018") \
     .getOrCreate()
 
-studata = spark.read.csv("data.csv", sep=" ", header=True, inferSchema=True)
+studata = spark.read.csv("citys.csv", sep=" ", header=True, inferSchema=True)
 
 year = substring(col("Roll"), 2, 2).cast("int")
 
